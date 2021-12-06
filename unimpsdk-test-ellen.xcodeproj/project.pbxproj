@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E2244427454E3400D1FC0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2244327454E3400D1FC0D /* AppDelegate.swift */; };
+		04E2244627454E3400D1FC0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2244527454E3400D1FC0D /* SceneDelegate.swift */; };
+		04E2244827454E3400D1FC0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2244727454E3400D1FC0D /* ViewController.swift */; };
+		04E2244B27454E3400D1FC0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2244927454E3400D1FC0D /* Main.storyboard */; };
+		04E2244D27454E3600D1FC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E2244C27454E3600D1FC0D /* Assets.xcassets */; };
+		04E2245027454E3600D1FC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2244E27454E3600D1FC0D /* LaunchScreen.storyboard */; };
+		04E2245B27454E3600D1FC0D /* unimpsdk_test_ellenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2245A27454E3600D1FC0D /* unimpsdk_test_ellenTests.swift */; };
+		04E2246527454E3600D1FC0D /* unimpsdk_test_ellenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2246427454E3600D1FC0D /* unimpsdk_test_ellenUITests.swift */; };
+		04E2246727454E3600D1FC0D /* unimpsdk_test_ellenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2246627454E3600D1FC0D /* unimpsdk_test_ellenUITestsLaunchTests.swift */; };
+		04E2247527454F9D00D1FC0D /* __UNI__3A6E687.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 04E2247427454F9D00D1FC0D /* __UNI__3A6E687.wgt */; };
+		04E224792745501F00D1FC0D /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E224782745501F00D1FC0D /* Test.m */; };
+		04E224872745506700D1FC0D /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2247B2745506600D1FC0D /* liblibNavigator.a */; };
+		04E224882745506700D1FC0D /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2247C2745506600D1FC0D /* liblibUI.a */; };
+		04E224892745506700D1FC0D /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2247D2745506600D1FC0D /* libcoreSupport.a */; };
+		04E2248A2745506700D1FC0D /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2247E2745506600D1FC0D /* liblibWeex.a */; };
+		04E2248B2745506700D1FC0D /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2247F2745506600D1FC0D /* libSDWebImage.a */; };
+		04E2248C2745506700D1FC0D /* liblibStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224802745506600D1FC0D /* liblibStorage.a */; };
+		04E2248D2745506700D1FC0D /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224812745506600D1FC0D /* liblibPDRCore.a */; };
+		04E2248E2745506700D1FC0D /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224822745506700D1FC0D /* liblibPGInvocation.a */; };
+		04E2248F2745506700D1FC0D /* liblibNativeObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224832745506700D1FC0D /* liblibNativeObj.a */; };
+		04E224902745506700D1FC0D /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224842745506700D1FC0D /* liblibNativeUI.a */; };
+		04E224912745506700D1FC0D /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224852745506700D1FC0D /* liblibIO.a */; };
+		04E224922745506700D1FC0D /* storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224862745506700D1FC0D /* storage.framework */; };
+		04E224942745507F00D1FC0D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224932745507F00D1FC0D /* JavaScriptCore.framework */; };
+		04E224962745508B00D1FC0D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224952745508A00D1FC0D /* CoreMedia.framework */; };
+		04E224982745509200D1FC0D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224972745509200D1FC0D /* MediaPlayer.framework */; };
+		04E2249A2745509A00D1FC0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224992745509A00D1FC0D /* AVFoundation.framework */; };
+		04E2249C274550A100D1FC0D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2249B274550A100D1FC0D /* AVKit.framework */; };
+		04E2249E274550A700D1FC0D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2249D274550A700D1FC0D /* GLKit.framework */; };
+		04E224A0274550AF00D1FC0D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2249F274550AF00D1FC0D /* OpenGLES.framework */; };
+		04E224A2274550B600D1FC0D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224A1274550B600D1FC0D /* CoreText.framework */; };
+		04E224A4274550BC00D1FC0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224A3274550BC00D1FC0D /* QuartzCore.framework */; };
+		04E224A6274550C600D1FC0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224A5274550C600D1FC0D /* CoreGraphics.framework */; };
+		04E224A8274550CF00D1FC0D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224A7274550CF00D1FC0D /* libc++.tbd */; };
+		04E224AA274550D700D1FC0D /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224A9274550D700D1FC0D /* QuickLook.framework */; };
+		04E224AC274550E200D1FC0D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224AB274550E200D1FC0D /* CoreTelephony.framework */; };
+		04E224AE274550EB00D1FC0D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224AD274550EB00D1FC0D /* AssetsLibrary.framework */; };
+		04E224B0274550F100D1FC0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224AF274550F100D1FC0D /* CoreLocation.framework */; };
+		04E224B2274550F800D1FC0D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224B1274550F800D1FC0D /* AddressBook.framework */; };
+		04E224B42745510100D1FC0D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E224B32745510100D1FC0D /* libiconv.tbd */; };
+		04E225092745512800D1FC0D /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 04E225022745512800D1FC0D /* __uniappes6.js */; };
+		04E2250A2745512800D1FC0D /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 04E225032745512800D1FC0D /* uni-jsframework.js */; };
+		04E2250B2745512800D1FC0D /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04E225042745512800D1FC0D /* PandoraApi.bundle */; };
+		04E2250C2745512800D1FC0D /* uni-jsframework-vue3.js in Resources */ = {isa = PBXBuildFile; fileRef = 04E225052745512800D1FC0D /* uni-jsframework-vue3.js */; };
+		04E2250D2745512800D1FC0D /* unincomponents.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04E225062745512800D1FC0D /* unincomponents.ttf */; };
+		04E2250E2745512800D1FC0D /* weex-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 04E225072745512800D1FC0D /* weex-polyfill.js */; };
+		04E2250F2745512800D1FC0D /* weexUniJs.js in Resources */ = {isa = PBXBuildFile; fileRef = 04E225082745512800D1FC0D /* weexUniJs.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E2245727454E3600D1FC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E2243827454E3400D1FC0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E2243F27454E3400D1FC0D;
+			remoteInfo = "unimpsdk-test-ellen";
+		};
+		04E2246127454E3600D1FC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E2243827454E3400D1FC0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E2243F27454E3400D1FC0D;
+			remoteInfo = "unimpsdk-test-ellen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E2244027454E3400D1FC0D /* unimpsdk-test-ellen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unimpsdk-test-ellen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2244327454E3400D1FC0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04E2244527454E3400D1FC0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04E2244727454E3400D1FC0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04E2244A27454E3400D1FC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04E2244C27454E3600D1FC0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E2244F27454E3600D1FC0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E2245127454E3600D1FC0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E2245627454E3600D1FC0D /* unimpsdk-test-ellenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unimpsdk-test-ellenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2245A27454E3600D1FC0D /* unimpsdk_test_ellenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unimpsdk_test_ellenTests.swift; sourceTree = "<group>"; };
+		04E2246027454E3600D1FC0D /* unimpsdk-test-ellenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unimpsdk-test-ellenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E2246427454E3600D1FC0D /* unimpsdk_test_ellenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unimpsdk_test_ellenUITests.swift; sourceTree = "<group>"; };
+		04E2246627454E3600D1FC0D /* unimpsdk_test_ellenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unimpsdk_test_ellenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04E2247427454F9D00D1FC0D /* __UNI__3A6E687.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__3A6E687.wgt; sourceTree = "<group>"; };
+		04E224772745501F00D1FC0D /* unimpsdk-test-ellen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unimpsdk-test-ellen-Bridging-Header.h"; sourceTree = "<group>"; };
+		04E224782745501F00D1FC0D /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		04E2247B2745506600D1FC0D /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNavigator.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibNavigator.a"; sourceTree = "<group>"; };
+		04E2247C2745506600D1FC0D /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibUI.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibUI.a"; sourceTree = "<group>"; };
+		04E2247D2745506600D1FC0D /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcoreSupport.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/libcoreSupport.a"; sourceTree = "<group>"; };
+		04E2247E2745506600D1FC0D /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibWeex.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibWeex.a"; sourceTree = "<group>"; };
+		04E2247F2745506600D1FC0D /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/libSDWebImage.a"; sourceTree = "<group>"; };
+		04E224802745506600D1FC0D /* liblibStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibStorage.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibStorage.a"; sourceTree = "<group>"; };
+		04E224812745506600D1FC0D /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPDRCore.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibPDRCore.a"; sourceTree = "<group>"; };
+		04E224822745506700D1FC0D /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPGInvocation.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibPGInvocation.a"; sourceTree = "<group>"; };
+		04E224832745506700D1FC0D /* liblibNativeObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNativeObj.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibNativeObj.a"; sourceTree = "<group>"; };
+		04E224842745506700D1FC0D /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNativeUI.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibNativeUI.a"; sourceTree = "<group>"; };
+		04E224852745506700D1FC0D /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibIO.a; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/liblibIO.a"; sourceTree = "<group>"; };
+		04E224862745506700D1FC0D /* storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = storage.framework; path = "unimpsdk-test-ellen/UniMPSDK/Core/Libs/storage.framework"; sourceTree = "<group>"; };
+		04E224932745507F00D1FC0D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04E224952745508A00D1FC0D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		04E224972745509200D1FC0D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		04E224992745509A00D1FC0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04E2249B274550A100D1FC0D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		04E2249D274550A700D1FC0D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		04E2249F274550AF00D1FC0D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		04E224A1274550B600D1FC0D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		04E224A3274550BC00D1FC0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04E224A5274550C600D1FC0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04E224A7274550CF00D1FC0D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		04E224A9274550D700D1FC0D /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		04E224AB274550E200D1FC0D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		04E224AD274550EB00D1FC0D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		04E224AF274550F100D1FC0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04E224B1274550F800D1FC0D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		04E224B32745510100D1FC0D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		04E224B62745512800D1FC0D /* DCUniMPSDKEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPSDKEngine.h; sourceTree = "<group>"; };
+		04E224B72745512800D1FC0D /* DCUniMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMP.h; sourceTree = "<group>"; };
+		04E224B82745512800D1FC0D /* DCUniMPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPConfiguration.h; sourceTree = "<group>"; };
+		04E224B92745512800D1FC0D /* DCUniMPInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPInstance.h; sourceTree = "<group>"; };
+		04E224BB2745512800D1FC0D /* WXModuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXModuleProtocol.h; sourceTree = "<group>"; };
+		04E224BC2745512800D1FC0D /* WXResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceLoader.h; sourceTree = "<group>"; };
+		04E224BD2745512800D1FC0D /* WXApmForInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApmForInstance.h; sourceTree = "<group>"; };
+		04E224BE2745512800D1FC0D /* WXWebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXWebSocketHandler.h; sourceTree = "<group>"; };
+		04E224BF2745512800D1FC0D /* WXImgLoaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderProtocol.h; sourceTree = "<group>"; };
+		04E224C02745512800D1FC0D /* WXComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXComponentManager.h; sourceTree = "<group>"; };
+		04E224C12745512800D1FC0D /* WXScrollerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScrollerProtocol.h; sourceTree = "<group>"; };
+		04E224C22745512800D1FC0D /* WXRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRichText.h; sourceTree = "<group>"; };
+		04E224C32745512800D1FC0D /* WXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXView.h; sourceTree = "<group>"; };
+		04E224C42745512800D1FC0D /* WXValidateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXValidateProtocol.h; sourceTree = "<group>"; };
+		04E224C52745512800D1FC0D /* WXDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDefine.h; sourceTree = "<group>"; };
+		04E224C62745512800D1FC0D /* JSContext+Weex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSContext+Weex.h"; sourceTree = "<group>"; };
+		04E224C72745512800D1FC0D /* WXExtendCallNativeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXExtendCallNativeProtocol.h; sourceTree = "<group>"; };
+		04E224C82745512800D1FC0D /* WXSDKEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKEngine.h; sourceTree = "<group>"; };
+		04E224C92745512800D1FC0D /* style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = style.h; sourceTree = "<group>"; };
+		04E224CA2745512800D1FC0D /* WXResourceRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceRequestHandler.h; sourceTree = "<group>"; };
+		04E224CB2745512800D1FC0D /* WXDisplayLinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDisplayLinkManager.h; sourceTree = "<group>"; };
+		04E224CC2745512800D1FC0D /* WXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtility.h; sourceTree = "<group>"; };
+		04E224CD2745512800D1FC0D /* WXResourceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceRequest.h; sourceTree = "<group>"; };
+		04E224CE2745512800D1FC0D /* WXConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConvert.h; sourceTree = "<group>"; };
+		04E224CF2745512800D1FC0D /* WXPageEventNotifyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPageEventNotifyEvent.h; sourceTree = "<group>"; };
+		04E224D02745512800D1FC0D /* WXSDKInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKInstance.h; sourceTree = "<group>"; };
+		04E224D12745512800D1FC0D /* WXSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKManager.h; sourceTree = "<group>"; };
+		04E224D22745512800D1FC0D /* WXDebugTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDebugTool.h; sourceTree = "<group>"; };
+		04E224D32745512800D1FC0D /* WXType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXType.h; sourceTree = "<group>"; };
+		04E224D42745512800D1FC0D /* WXApmProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApmProtocol.h; sourceTree = "<group>"; };
+		04E224D52745512800D1FC0D /* WXJSFrameworkLoadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSFrameworkLoadProtocol.h; sourceTree = "<group>"; };
+		04E224D62745512800D1FC0D /* WXExceptionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXExceptionUtils.h; sourceTree = "<group>"; };
+		04E224D72745512800D1FC0D /* WXIndicatorComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXIndicatorComponent.h; sourceTree = "<group>"; };
+		04E224D82745512800D1FC0D /* WXErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXErrorView.h; sourceTree = "<group>"; };
+		04E224D92745512800D1FC0D /* NSObject+WXSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXSwizzle.h"; sourceTree = "<group>"; };
+		04E224DA2745512800D1FC0D /* WXMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMonitor.h; sourceTree = "<group>"; };
+		04E224DB2745512800D1FC0D /* WXSDKInstance+DCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+DCExtend.h"; sourceTree = "<group>"; };
+		04E224DC2745512800D1FC0D /* WXRecyclerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRecyclerComponent.h; sourceTree = "<group>"; };
+		04E224DD2745512800D1FC0D /* WXScrollerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScrollerComponent.h; sourceTree = "<group>"; };
+		04E224DE2745512800D1FC0D /* WXNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkProtocol.h; sourceTree = "<group>"; };
+		04E224DF2745512800D1FC0D /* WXTracingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTracingManager.h; sourceTree = "<group>"; };
+		04E224E02745512800D1FC0D /* WXComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXComponent.h; sourceTree = "<group>"; };
+		04E224E12745512800D1FC0D /* WXPrerenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPrerenderManager.h; sourceTree = "<group>"; };
+		04E224E22745512800D1FC0D /* WXComponent+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXComponent+Layout.h"; sourceTree = "<group>"; };
+		04E224E32745512800D1FC0D /* layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layout.h; sourceTree = "<group>"; };
+		04E224E42745512800D1FC0D /* WXSDKInstance+Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+Bridge.h"; sourceTree = "<group>"; };
+		04E224E52745512800D1FC0D /* UniPluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniPluginProtocol.h; sourceTree = "<group>"; };
+		04E224E62745512800D1FC0D /* WXModalUIModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXModalUIModule.h; sourceTree = "<group>"; };
+		04E224E72745512800D1FC0D /* WXAnalyzerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerCenter.h; sourceTree = "<group>"; };
+		04E224E82745512800D1FC0D /* WXVoiceOverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXVoiceOverModule.h; sourceTree = "<group>"; };
+		04E224E92745512800D1FC0D /* WXRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRootView.h; sourceTree = "<group>"; };
+		04E224EA2745512800D1FC0D /* WXAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAppConfiguration.h; sourceTree = "<group>"; };
+		04E224EB2745512800D1FC0D /* WXListComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXListComponent.h; sourceTree = "<group>"; };
+		04E224EC2745512800D1FC0D /* WXSDKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSDKError.h; sourceTree = "<group>"; };
+		04E224ED2745512800D1FC0D /* WXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXRootViewController.h; sourceTree = "<group>"; };
+		04E224EE2745512800D1FC0D /* WXNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigationProtocol.h; sourceTree = "<group>"; };
+		04E224EF2745512800D1FC0D /* WXAnalyzerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerProtocol.h; sourceTree = "<group>"; };
+		04E224F02745512800D1FC0D /* WeexSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexSDK.h; sourceTree = "<group>"; };
+		04E224F12745512800D1FC0D /* WXBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBridgeManager.h; sourceTree = "<group>"; };
+		04E224F22745512800D1FC0D /* WXResourceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResourceResponse.h; sourceTree = "<group>"; };
+		04E224F32745512800D1FC0D /* WXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseViewController.h; sourceTree = "<group>"; };
+		04E224F42745512800D1FC0D /* WXAppMonitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAppMonitorProtocol.h; sourceTree = "<group>"; };
+		04E224F52745512800D1FC0D /* WeexProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexProtocol.h; sourceTree = "<group>"; };
+		04E224F62745512800D1FC0D /* WXJSExceptionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionProtocol.h; sourceTree = "<group>"; };
+		04E224F72745512800D1FC0D /* WXJSExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionInfo.h; sourceTree = "<group>"; };
+		04E224F82745512800D1FC0D /* WXTracingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTracingProtocol.h; sourceTree = "<group>"; };
+		04E224F92745512800D1FC0D /* flex_enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flex_enum.h; sourceTree = "<group>"; };
+		04E224FA2745512800D1FC0D /* WXConfigCenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXConfigCenterProtocol.h; sourceTree = "<group>"; };
+		04E224FB2745512800D1FC0D /* WXEventModuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModuleProtocol.h; sourceTree = "<group>"; };
+		04E224FC2745512800D1FC0D /* WXURLRewriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXURLRewriteProtocol.h; sourceTree = "<group>"; };
+		04E224FD2745512800D1FC0D /* WXAComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAComponent.h; sourceTree = "<group>"; };
+		04E224FE2745512800D1FC0D /* WXBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBridgeProtocol.h; sourceTree = "<group>"; };
+		04E224FF2745512800D1FC0D /* DCUniMPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPError.h; sourceTree = "<group>"; };
+		04E225002745512800D1FC0D /* DCUniMPMenuActionSheetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUniMPMenuActionSheetStyle.h; sourceTree = "<group>"; };
+		04E225022745512800D1FC0D /* __uniappes6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = __uniappes6.js; sourceTree = "<group>"; };
+		04E225032745512800D1FC0D /* uni-jsframework.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework.js"; sourceTree = "<group>"; };
+		04E225042745512800D1FC0D /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
+		04E225052745512800D1FC0D /* uni-jsframework-vue3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework-vue3.js"; sourceTree = "<group>"; };
+		04E225062745512800D1FC0D /* unincomponents.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unincomponents.ttf; sourceTree = "<group>"; };
+		04E225072745512800D1FC0D /* weex-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "weex-polyfill.js"; sourceTree = "<group>"; };
+		04E225082745512800D1FC0D /* weexUniJs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E2243D27454E3400D1FC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E224B42745510100D1FC0D /* libiconv.tbd in Frameworks */,
+				04E224B2274550F800D1FC0D /* AddressBook.framework in Frameworks */,
+				04E224B0274550F100D1FC0D /* CoreLocation.framework in Frameworks */,
+				04E224AE274550EB00D1FC0D /* AssetsLibrary.framework in Frameworks */,
+				04E224AC274550E200D1FC0D /* CoreTelephony.framework in Frameworks */,
+				04E224AA274550D700D1FC0D /* QuickLook.framework in Frameworks */,
+				04E224A8274550CF00D1FC0D /* libc++.tbd in Frameworks */,
+				04E224A6274550C600D1FC0D /* CoreGraphics.framework in Frameworks */,
+				04E224A4274550BC00D1FC0D /* QuartzCore.framework in Frameworks */,
+				04E224A2274550B600D1FC0D /* CoreText.framework in Frameworks */,
+				04E224A0274550AF00D1FC0D /* OpenGLES.framework in Frameworks */,
+				04E2249E274550A700D1FC0D /* GLKit.framework in Frameworks */,
+				04E2249C274550A100D1FC0D /* AVKit.framework in Frameworks */,
+				04E2249A2745509A00D1FC0D /* AVFoundation.framework in Frameworks */,
+				04E224982745509200D1FC0D /* MediaPlayer.framework in Frameworks */,
+				04E224962745508B00D1FC0D /* CoreMedia.framework in Frameworks */,
+				04E224942745507F00D1FC0D /* JavaScriptCore.framework in Frameworks */,
+				04E224872745506700D1FC0D /* liblibNavigator.a in Frameworks */,
+				04E224882745506700D1FC0D /* liblibUI.a in Frameworks */,
+				04E224892745506700D1FC0D /* libcoreSupport.a in Frameworks */,
+				04E2248A2745506700D1FC0D /* liblibWeex.a in Frameworks */,
+				04E2248B2745506700D1FC0D /* libSDWebImage.a in Frameworks */,
+				04E2248C2745506700D1FC0D /* liblibStorage.a in Frameworks */,
+				04E2248D2745506700D1FC0D /* liblibPDRCore.a in Frameworks */,
+				04E2248E2745506700D1FC0D /* liblibPGInvocation.a in Frameworks */,
+				04E2248F2745506700D1FC0D /* liblibNativeObj.a in Frameworks */,
+				04E224902745506700D1FC0D /* liblibNativeUI.a in Frameworks */,
+				04E224912745506700D1FC0D /* liblibIO.a in Frameworks */,
+				04E224922745506700D1FC0D /* storage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245327454E3600D1FC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245D27454E3600D1FC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E2243727454E3400D1FC0D = {
+			isa = PBXGroup;
+			children = (
+				04E2244227454E3400D1FC0D /* unimpsdk-test-ellen */,
+				04E2245927454E3600D1FC0D /* unimpsdk-test-ellenTests */,
+				04E2246327454E3600D1FC0D /* unimpsdk-test-ellenUITests */,
+				04E2244127454E3400D1FC0D /* Products */,
+				04E2247A2745506600D1FC0D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04E2244127454E3400D1FC0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E2244027454E3400D1FC0D /* unimpsdk-test-ellen.app */,
+				04E2245627454E3600D1FC0D /* unimpsdk-test-ellenTests.xctest */,
+				04E2246027454E3600D1FC0D /* unimpsdk-test-ellenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E2244227454E3400D1FC0D /* unimpsdk-test-ellen */ = {
+			isa = PBXGroup;
+			children = (
+				04E2247627454FA400D1FC0D /* extension */,
+				04E2247327454F9D00D1FC0D /* Apps */,
+				04E2244327454E3400D1FC0D /* AppDelegate.swift */,
+				04E2244527454E3400D1FC0D /* SceneDelegate.swift */,
+				04E2244727454E3400D1FC0D /* ViewController.swift */,
+				04E2244927454E3400D1FC0D /* Main.storyboard */,
+				04E2244C27454E3600D1FC0D /* Assets.xcassets */,
+				04E2244E27454E3600D1FC0D /* LaunchScreen.storyboard */,
+				04E2245127454E3600D1FC0D /* Info.plist */,
+			);
+			path = "unimpsdk-test-ellen";
+			sourceTree = "<group>";
+		};
+		04E2245927454E3600D1FC0D /* unimpsdk-test-ellenTests */ = {
+			isa = PBXGroup;
+			children = (
+				04E2245A27454E3600D1FC0D /* unimpsdk_test_ellenTests.swift */,
+			);
+			path = "unimpsdk-test-ellenTests";
+			sourceTree = "<group>";
+		};
+		04E2246327454E3600D1FC0D /* unimpsdk-test-ellenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04E2246427454E3600D1FC0D /* unimpsdk_test_ellenUITests.swift */,
+				04E2246627454E3600D1FC0D /* unimpsdk_test_ellenUITestsLaunchTests.swift */,
+			);
+			path = "unimpsdk-test-ellenUITests";
+			sourceTree = "<group>";
+		};
+		04E2247327454F9D00D1FC0D /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				04E224B52745512800D1FC0D /* Headers */,
+				04E225012745512800D1FC0D /* Resources */,
+				04E2247427454F9D00D1FC0D /* __UNI__3A6E687.wgt */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		04E2247627454FA400D1FC0D /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				04E224782745501F00D1FC0D /* Test.m */,
+				04E224772745501F00D1FC0D /* unimpsdk-test-ellen-Bridging-Header.h */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		04E2247A2745506600D1FC0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E224B32745510100D1FC0D /* libiconv.tbd */,
+				04E224B1274550F800D1FC0D /* AddressBook.framework */,
+				04E224AF274550F100D1FC0D /* CoreLocation.framework */,
+				04E224AD274550EB00D1FC0D /* AssetsLibrary.framework */,
+				04E224AB274550E200D1FC0D /* CoreTelephony.framework */,
+				04E224A9274550D700D1FC0D /* QuickLook.framework */,
+				04E224A7274550CF00D1FC0D /* libc++.tbd */,
+				04E224A5274550C600D1FC0D /* CoreGraphics.framework */,
+				04E224A3274550BC00D1FC0D /* QuartzCore.framework */,
+				04E224A1274550B600D1FC0D /* CoreText.framework */,
+				04E2249F274550AF00D1FC0D /* OpenGLES.framework */,
+				04E2249D274550A700D1FC0D /* GLKit.framework */,
+				04E2249B274550A100D1FC0D /* AVKit.framework */,
+				04E224992745509A00D1FC0D /* AVFoundation.framework */,
+				04E224972745509200D1FC0D /* MediaPlayer.framework */,
+				04E224952745508A00D1FC0D /* CoreMedia.framework */,
+				04E224932745507F00D1FC0D /* JavaScriptCore.framework */,
+				04E2247D2745506600D1FC0D /* libcoreSupport.a */,
+				04E224852745506700D1FC0D /* liblibIO.a */,
+				04E224832745506700D1FC0D /* liblibNativeObj.a */,
+				04E224842745506700D1FC0D /* liblibNativeUI.a */,
+				04E2247B2745506600D1FC0D /* liblibNavigator.a */,
+				04E224812745506600D1FC0D /* liblibPDRCore.a */,
+				04E224822745506700D1FC0D /* liblibPGInvocation.a */,
+				04E224802745506600D1FC0D /* liblibStorage.a */,
+				04E2247C2745506600D1FC0D /* liblibUI.a */,
+				04E2247E2745506600D1FC0D /* liblibWeex.a */,
+				04E2247F2745506600D1FC0D /* libSDWebImage.a */,
+				04E224862745506700D1FC0D /* storage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E224B52745512800D1FC0D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				04E224B62745512800D1FC0D /* DCUniMPSDKEngine.h */,
+				04E224B72745512800D1FC0D /* DCUniMP.h */,
+				04E224B82745512800D1FC0D /* DCUniMPConfiguration.h */,
+				04E224B92745512800D1FC0D /* DCUniMPInstance.h */,
+				04E224BA2745512800D1FC0D /* weexHeader */,
+				04E224FF2745512800D1FC0D /* DCUniMPError.h */,
+				04E225002745512800D1FC0D /* DCUniMPMenuActionSheetStyle.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		04E224BA2745512800D1FC0D /* weexHeader */ = {
+			isa = PBXGroup;
+			children = (
+				04E224BB2745512800D1FC0D /* WXModuleProtocol.h */,
+				04E224BC2745512800D1FC0D /* WXResourceLoader.h */,
+				04E224BD2745512800D1FC0D /* WXApmForInstance.h */,
+				04E224BE2745512800D1FC0D /* WXWebSocketHandler.h */,
+				04E224BF2745512800D1FC0D /* WXImgLoaderProtocol.h */,
+				04E224C02745512800D1FC0D /* WXComponentManager.h */,
+				04E224C12745512800D1FC0D /* WXScrollerProtocol.h */,
+				04E224C22745512800D1FC0D /* WXRichText.h */,
+				04E224C32745512800D1FC0D /* WXView.h */,
+				04E224C42745512800D1FC0D /* WXValidateProtocol.h */,
+				04E224C52745512800D1FC0D /* WXDefine.h */,
+				04E224C62745512800D1FC0D /* JSContext+Weex.h */,
+				04E224C72745512800D1FC0D /* WXExtendCallNativeProtocol.h */,
+				04E224C82745512800D1FC0D /* WXSDKEngine.h */,
+				04E224C92745512800D1FC0D /* style.h */,
+				04E224CA2745512800D1FC0D /* WXResourceRequestHandler.h */,
+				04E224CB2745512800D1FC0D /* WXDisplayLinkManager.h */,
+				04E224CC2745512800D1FC0D /* WXUtility.h */,
+				04E224CD2745512800D1FC0D /* WXResourceRequest.h */,
+				04E224CE2745512800D1FC0D /* WXConvert.h */,
+				04E224CF2745512800D1FC0D /* WXPageEventNotifyEvent.h */,
+				04E224D02745512800D1FC0D /* WXSDKInstance.h */,
+				04E224D12745512800D1FC0D /* WXSDKManager.h */,
+				04E224D22745512800D1FC0D /* WXDebugTool.h */,
+				04E224D32745512800D1FC0D /* WXType.h */,
+				04E224D42745512800D1FC0D /* WXApmProtocol.h */,
+				04E224D52745512800D1FC0D /* WXJSFrameworkLoadProtocol.h */,
+				04E224D62745512800D1FC0D /* WXExceptionUtils.h */,
+				04E224D72745512800D1FC0D /* WXIndicatorComponent.h */,
+				04E224D82745512800D1FC0D /* WXErrorView.h */,
+				04E224D92745512800D1FC0D /* NSObject+WXSwizzle.h */,
+				04E224DA2745512800D1FC0D /* WXMonitor.h */,
+				04E224DB2745512800D1FC0D /* WXSDKInstance+DCExtend.h */,
+				04E224DC2745512800D1FC0D /* WXRecyclerComponent.h */,
+				04E224DD2745512800D1FC0D /* WXScrollerComponent.h */,
+				04E224DE2745512800D1FC0D /* WXNetworkProtocol.h */,
+				04E224DF2745512800D1FC0D /* WXTracingManager.h */,
+				04E224E02745512800D1FC0D /* WXComponent.h */,
+				04E224E12745512800D1FC0D /* WXPrerenderManager.h */,
+				04E224E22745512800D1FC0D /* WXComponent+Layout.h */,
+				04E224E32745512800D1FC0D /* layout.h */,
+				04E224E42745512800D1FC0D /* WXSDKInstance+Bridge.h */,
+				04E224E52745512800D1FC0D /* UniPluginProtocol.h */,
+				04E224E62745512800D1FC0D /* WXModalUIModule.h */,
+				04E224E72745512800D1FC0D /* WXAnalyzerCenter.h */,
+				04E224E82745512800D1FC0D /* WXVoiceOverModule.h */,
+				04E224E92745512800D1FC0D /* WXRootView.h */,
+				04E224EA2745512800D1FC0D /* WXAppConfiguration.h */,
+				04E224EB2745512800D1FC0D /* WXListComponent.h */,
+				04E224EC2745512800D1FC0D /* WXSDKError.h */,
+				04E224ED2745512800D1FC0D /* WXRootViewController.h */,
+				04E224EE2745512800D1FC0D /* WXNavigationProtocol.h */,
+				04E224EF2745512800D1FC0D /* WXAnalyzerProtocol.h */,
+				04E224F02745512800D1FC0D /* WeexSDK.h */,
+				04E224F12745512800D1FC0D /* WXBridgeManager.h */,
+				04E224F22745512800D1FC0D /* WXResourceResponse.h */,
+				04E224F32745512800D1FC0D /* WXBaseViewController.h */,
+				04E224F42745512800D1FC0D /* WXAppMonitorProtocol.h */,
+				04E224F52745512800D1FC0D /* WeexProtocol.h */,
+				04E224F62745512800D1FC0D /* WXJSExceptionProtocol.h */,
+				04E224F72745512800D1FC0D /* WXJSExceptionInfo.h */,
+				04E224F82745512800D1FC0D /* WXTracingProtocol.h */,
+				04E224F92745512800D1FC0D /* flex_enum.h */,
+				04E224FA2745512800D1FC0D /* WXConfigCenterProtocol.h */,
+				04E224FB2745512800D1FC0D /* WXEventModuleProtocol.h */,
+				04E224FC2745512800D1FC0D /* WXURLRewriteProtocol.h */,
+				04E224FD2745512800D1FC0D /* WXAComponent.h */,
+				04E224FE2745512800D1FC0D /* WXBridgeProtocol.h */,
+			);
+			path = weexHeader;
+			sourceTree = "<group>";
+		};
+		04E225012745512800D1FC0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04E225022745512800D1FC0D /* __uniappes6.js */,
+				04E225032745512800D1FC0D /* uni-jsframework.js */,
+				04E225042745512800D1FC0D /* PandoraApi.bundle */,
+				04E225052745512800D1FC0D /* uni-jsframework-vue3.js */,
+				04E225062745512800D1FC0D /* unincomponents.ttf */,
+				04E225072745512800D1FC0D /* weex-polyfill.js */,
+				04E225082745512800D1FC0D /* weexUniJs.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E2243F27454E3400D1FC0D /* unimpsdk-test-ellen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2246A27454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellen" */;
+			buildPhases = (
+				04E2243C27454E3400D1FC0D /* Sources */,
+				04E2243D27454E3400D1FC0D /* Frameworks */,
+				04E2243E27454E3400D1FC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "unimpsdk-test-ellen";
+			productName = "unimpsdk-test-ellen";
+			productReference = 04E2244027454E3400D1FC0D /* unimpsdk-test-ellen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04E2245527454E3600D1FC0D /* unimpsdk-test-ellenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2246D27454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellenTests" */;
+			buildPhases = (
+				04E2245227454E3600D1FC0D /* Sources */,
+				04E2245327454E3600D1FC0D /* Frameworks */,
+				04E2245427454E3600D1FC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E2245827454E3600D1FC0D /* PBXTargetDependency */,
+			);
+			name = "unimpsdk-test-ellenTests";
+			productName = "unimpsdk-test-ellenTests";
+			productReference = 04E2245627454E3600D1FC0D /* unimpsdk-test-ellenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04E2245F27454E3600D1FC0D /* unimpsdk-test-ellenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E2247027454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellenUITests" */;
+			buildPhases = (
+				04E2245C27454E3600D1FC0D /* Sources */,
+				04E2245D27454E3600D1FC0D /* Frameworks */,
+				04E2245E27454E3600D1FC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E2246227454E3600D1FC0D /* PBXTargetDependency */,
+			);
+			name = "unimpsdk-test-ellenUITests";
+			productName = "unimpsdk-test-ellenUITests";
+			productReference = 04E2246027454E3600D1FC0D /* unimpsdk-test-ellenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E2243827454E3400D1FC0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					04E2243F27454E3400D1FC0D = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					04E2245527454E3600D1FC0D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 04E2243F27454E3400D1FC0D;
+					};
+					04E2245F27454E3600D1FC0D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 04E2243F27454E3400D1FC0D;
+					};
+				};
+			};
+			buildConfigurationList = 04E2243B27454E3400D1FC0D /* Build configuration list for PBXProject "unimpsdk-test-ellen" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E2243727454E3400D1FC0D;
+			productRefGroup = 04E2244127454E3400D1FC0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E2243F27454E3400D1FC0D /* unimpsdk-test-ellen */,
+				04E2245527454E3600D1FC0D /* unimpsdk-test-ellenTests */,
+				04E2245F27454E3600D1FC0D /* unimpsdk-test-ellenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E2243E27454E3400D1FC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2245027454E3600D1FC0D /* LaunchScreen.storyboard in Resources */,
+				04E225092745512800D1FC0D /* __uniappes6.js in Resources */,
+				04E2250E2745512800D1FC0D /* weex-polyfill.js in Resources */,
+				04E2244D27454E3600D1FC0D /* Assets.xcassets in Resources */,
+				04E2250B2745512800D1FC0D /* PandoraApi.bundle in Resources */,
+				04E2247527454F9D00D1FC0D /* __UNI__3A6E687.wgt in Resources */,
+				04E2250D2745512800D1FC0D /* unincomponents.ttf in Resources */,
+				04E2244B27454E3400D1FC0D /* Main.storyboard in Resources */,
+				04E2250C2745512800D1FC0D /* uni-jsframework-vue3.js in Resources */,
+				04E2250F2745512800D1FC0D /* weexUniJs.js in Resources */,
+				04E2250A2745512800D1FC0D /* uni-jsframework.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245427454E3600D1FC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245E27454E3600D1FC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E2243C27454E3400D1FC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2244827454E3400D1FC0D /* ViewController.swift in Sources */,
+				04E224792745501F00D1FC0D /* Test.m in Sources */,
+				04E2244427454E3400D1FC0D /* AppDelegate.swift in Sources */,
+				04E2244627454E3400D1FC0D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245227454E3600D1FC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2245B27454E3600D1FC0D /* unimpsdk_test_ellenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E2245C27454E3600D1FC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E2246727454E3600D1FC0D /* unimpsdk_test_ellenUITestsLaunchTests.swift in Sources */,
+				04E2246527454E3600D1FC0D /* unimpsdk_test_ellenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E2245827454E3600D1FC0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E2243F27454E3400D1FC0D /* unimpsdk-test-ellen */;
+			targetProxy = 04E2245727454E3600D1FC0D /* PBXContainerItemProxy */;
+		};
+		04E2246227454E3600D1FC0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E2243F27454E3400D1FC0D /* unimpsdk-test-ellen */;
+			targetProxy = 04E2246127454E3600D1FC0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04E2244927454E3400D1FC0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E2244A27454E3400D1FC0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04E2244E27454E3600D1FC0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E2244F27454E3600D1FC0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E2246827454E3600D1FC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04E2246927454E3600D1FC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04E2246B27454E3600D1FC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/unimpsdk-test-ellen/UniMPSDK/Core/Libs",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unimpsdk-test-ellen/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/unimpsdk-test-ellen/UniMPSDK/Core/Libs",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "unimpsdk-test-ellen/extension/unimpsdk-test-ellen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E2246C27454E3600D1FC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/unimpsdk-test-ellen/UniMPSDK/Core/Libs",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unimpsdk-test-ellen/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/unimpsdk-test-ellen/UniMPSDK/Core/Libs",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "unimpsdk-test-ellen/extension/unimpsdk-test-ellen-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04E2246E27454E3600D1FC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unimpsdk-test-ellen.app/unimpsdk-test-ellen";
+			};
+			name = Debug;
+		};
+		04E2246F27454E3600D1FC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unimpsdk-test-ellen.app/unimpsdk-test-ellen";
+			};
+			name = Release;
+		};
+		04E2247127454E3600D1FC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "unimpsdk-test-ellen";
+			};
+			name = Debug;
+		};
+		04E2247227454E3600D1FC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ellen.test.unimpsdk-test-ellenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "unimpsdk-test-ellen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E2243B27454E3400D1FC0D /* Build configuration list for PBXProject "unimpsdk-test-ellen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2246827454E3600D1FC0D /* Debug */,
+				04E2246927454E3600D1FC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E2246A27454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2246B27454E3600D1FC0D /* Debug */,
+				04E2246C27454E3600D1FC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E2246D27454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2246E27454E3600D1FC0D /* Debug */,
+				04E2246F27454E3600D1FC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E2247027454E3600D1FC0D /* Build configuration list for PBXNativeTarget "unimpsdk-test-ellenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E2247127454E3600D1FC0D /* Debug */,
+				04E2247227454E3600D1FC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E2243827454E3400D1FC0D /* Project object */;
+}
